@@ -70,6 +70,8 @@ unix:!macx {
                ../platforms/unix/platform_x11_hotkey.h \
                 platform_base_hotkey.h \
                 platform_base_hottrigger.h
+
+    # Patch from Fedora (original author unknown)
     LIBS = -lX11
 
     PREFIX = /usr

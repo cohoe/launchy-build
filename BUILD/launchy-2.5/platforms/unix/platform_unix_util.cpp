@@ -14,8 +14,9 @@ UnixIconProvider::UnixIconProvider() {
 	QStringList spl = line.split("=");
 	xdgDataDirs = spl[1].split(":");	
     }
-    xdgDataDirs += "/usr/share/";
     xdgDataDirs += "/usr/share/icons/";
+    // Patch from Fedora (original author unknown)
+    xdgDataDirs += "/usr/share/";
 }
 
 

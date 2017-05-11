@@ -1,6 +1,6 @@
-.//usr/lib64/launchy/plugins/libgcalc.so
-.//usr/lib64/launchy/plugins/libweby.so
-.//usr/lib64/launchy/plugins/librunner.so
-.//usr/lib64/launchy/plugins/libcalcy.so
 .//usr/lib64/launchy/plugins/libverby.so
+.//usr/lib64/launchy/plugins/libcalcy.so
+.//usr/lib64/launchy/plugins/libgcalc.so
+.//usr/lib64/launchy/plugins/librunner.so
+.//usr/lib64/launchy/plugins/libweby.so
 .//usr/bin/launchy

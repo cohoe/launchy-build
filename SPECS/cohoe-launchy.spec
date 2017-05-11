@@ -1,13 +1,13 @@
 Name:           launchy
-Version:        master
-Release:        22%{?dist}
+Version:        2.5
+Release:        01%{?dist}
 Summary:        Custom spin of the Open Source Keystroke Launcher
 
 Group:          Applications/File
 License:        GPL+
 URL:            http://www.launchy.net
-#Source0:        http://www.launchy.net/downloads/src/launchy-2.5.tar.gz
-Source0:        https://github.com/cohoe/launchy/archive/master.tar
+Source0:        https://github.com/cohoe/launchy/archive/2.5.zip
+
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -36,7 +36,7 @@ for developing applications that use %{name}.
 %prep
 %setup -q
 # convert DOS to UNIX
-%{__sed} -i 's/\r//' LICENSE.txt readme.txt
+%{__sed} -i 's/\r//' LICENSE.txt readmes/readme.txt
 
 
 %build
@@ -104,7 +104,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%doc LICENSE.txt readme.txt
+%doc LICENSE.txt readmes/readme.txt
 %{_bindir}/%{name}
 %{_libdir}/%{name}/
 %{_datadir}/%{name}/
