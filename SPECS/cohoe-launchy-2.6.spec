@@ -1,12 +1,12 @@
 Name:           launchy
 Version:        2.6
-Release:        02%{?dist}
+Release:        03%{?dist}
 Summary:        Custom spin of the Open Source Keystroke Launcher
 
 Group:          Applications/File
 License:        GPL+
 URL:            http://www.launchy.net
-Source0:        https://github.com/cohoe/launchy/archive/2.6.zip
+Source0:        https://github.com/cohoe/launchy/archive/2.6.tar
 
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -120,6 +120,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Tue Aug 08 2017 Grant Cohoe <grant@grantcohoe.com> - 2.6-03
+- Rebuild for FC26
+
 * Thu May 11 2017 Grant Cohoe <grant@grantcohoe.com> - 2.6-02
 - Bugfixes and RPM changelog.
 

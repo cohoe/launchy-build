@@ -5,7 +5,7 @@ build:
 	# Prep
 	cd ~/Projects/priv/cohoe-launchy && tar cfz launchy.tar --transform 's,^,launchy-2.6/,' *
 	mv -f ~/Projects/priv/cohoe-launchy/launchy.tar ~/rpmbuild/SOURCES/2.6.tar
-	rpmbuild -bb SPECS/cohoe-launchy.spec
+	rpmbuild -bb SPECS/cohoe-launchy-2.6.spec
 
 install:
 	sudo dnf erase launchy -y
