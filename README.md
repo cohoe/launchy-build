@@ -19,3 +19,9 @@ sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt
 metadata_expire=300
 ```
+
+### Update Process (for me)
+1. Update SPECS/cohoe-launchy-2.6.spec version and changelog
+2. Run ```make build```
+3. Upload releases to [Github](https://github.com/cohoe/launchy/releases)
+4. Upload RPMs to PackageCloud
