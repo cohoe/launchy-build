@@ -120,6 +120,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sat Mar 03 2018 Grant Cohoe <grant@grantcohoe.com> - 2.6-04
+- Rebuild for FC27
+
 * Tue Aug 08 2017 Grant Cohoe <grant@grantcohoe.com> - 2.6-03
 - Rebuild for FC26
 
