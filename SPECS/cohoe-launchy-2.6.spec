@@ -6,7 +6,7 @@ Summary:        Custom spin of the Open Source Keystroke Launcher
 Group:          Applications/File
 License:        GPL+
 URL:            http://www.launchy.net
-Source0:        https://github.com/cohoe/launchy/archive/2.6.tar
+Source0:        https://github.com/cohoe/launchy/archive/2.6.tar.gz
 
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
