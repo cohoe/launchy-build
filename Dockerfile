@@ -1,11 +1,13 @@
-FROM fedora:28
+FROM fedora:30
 
 RUN dnf update -y
 RUN dnf install -y rpmdevtools boost-devel desktop-file-utils \
     gcc-c++ qt-devel make
 
+RUN mkdir -p /root/rpmbuild/SOURCES
+
 COPY . /opt/launchy
 
 WORKDIR /opt/launchy
 
-CMD rpmbuild -bb SPECS/cohoe-launchy-2.6.spec
+#RUN make
