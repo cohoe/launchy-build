@@ -4,7 +4,7 @@ launchy-build
 Build files for https://github.com/cohoe/launchy
 
 ### Building
-Update the base image tag in `Dockerfile` and bump the release/changelog in `SPECS/cohoe-launchy-2.6.spec` (TWO PLACES IN FILE!).
+Update the base image tag in `Dockerfile` and bump the release/changelog in `SPECS/launchy.spec` (TWO PLACES IN FILE!).
 
 ```
 ~ # docker build -t launchy .

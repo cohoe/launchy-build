@@ -1,17 +1,13 @@
 Name:           launchy
-#Version:        master
-Version:        2.5
-Release:        22%{?dist}
+Version:        2.7
+Release:        01%{?dist}
 Summary:        Custom spin of the Open Source Keystroke Launcher
 
 Group:          Applications/File
 License:        GPL+
 URL:            http://www.launchy.net
-Source0:        http://www.launchy.net/downloads/src/launchy-2.5.tar.gz
-#Source0:        https://github.com/Slesa/launchy/archive/master.zip
+Source0:        https://github.com/cohoe/launchy/archive/2.7.tar.gz
 
-Patch0:         %{name}-X11-lib.patch
-Patch1:         %{name}-xdg-icon-path.patch
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -24,6 +20,7 @@ Launchy is a free cross-platform utility designed to help you forget about your
 start menu, the icons on your desktop, and even your file manager.
 Launchy indexes the programs in your start menu and can launch your documents,
 project files, folders, and bookmarks with just a few keystrokes!
+This release has several bug fixes.
 
 
 %package        devel
@@ -39,10 +36,8 @@ for developing applications that use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
 # convert DOS to UNIX
-%{__sed} -i 's/\r//' LICENSE.txt readme.txt
+%{__sed} -i 's/\r//' LICENSE.txt readmes/readme.txt
 
 
 %build
@@ -110,7 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%doc LICENSE.txt readme.txt
+%doc LICENSE.txt readmes/readme.txt
 %{_bindir}/%{name}
 %{_libdir}/%{name}/
 %{_datadir}/%{name}/
@@ -125,6 +120,27 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Dec 09 2020 Grant Cohoe <grant@grantcohoe.com> - 2.7-01
+- Hopefully fix Exec
+
+* Fri Jun 12 2020 Grant Cohoe <grant@grantcohoe.com> - 2.6-09
+- Rebuild for FC32
+
+* Tue Dec 17 2019 Grant Cohoe <grant@grantcohoe.com> - 2.6-08
+- Rebuild for FC31
+
+* Mon Jun 03 2019 Grant Cohoe <grant@grantcohoe.com> - 2.6-07
+- Rebuild for FC30
+
+* Sat Mar 03 2018 Grant Cohoe <grant@grantcohoe.com> - 2.6-04
+- Rebuild for FC27
+
+* Tue Aug 08 2017 Grant Cohoe <grant@grantcohoe.com> - 2.6-03
+- Rebuild for FC26
+
+* Thu May 11 2017 Grant Cohoe <grant@grantcohoe.com> - 2.6-02
+- Bugfixes and RPM changelog.
+
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 2.5-19
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
