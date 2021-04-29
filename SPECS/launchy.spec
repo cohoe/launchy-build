@@ -1,6 +1,6 @@
 Name:           launchy
 Version:        2.7
-Release:        02%{?dist}
+Release:        03%{?dist}
 Summary:        Custom spin of the Open Source Keystroke Launcher
 
 Group:          Applications/File
@@ -120,6 +120,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu Apr 29 2021 Grant Cohoe <grant@grantcohoe.com> - 2.7-03
+- Rebuild for FC34
+
 * Thu Apr 29 2021 Grant Cohoe <grant@grantcohoe.com> - 2.7-02
 - Rebuild for FC33
 
