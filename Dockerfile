@@ -1,4 +1,4 @@
-FROM fedora:34
+FROM fedora:35
 
 RUN dnf update -y
 RUN dnf install -y rpmdevtools boost-devel desktop-file-utils \
