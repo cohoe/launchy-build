@@ -120,7 +120,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* mon sep 16 2024 grant cohoe <grant@grantcohoe.com> - 2.7-10
+* mon dec 16 2024 grant cohoe <grant@grantcohoe.com> - 2.7-10
 - rebuild for fc41
 
 * mon sep 16 2024 grant cohoe <grant@grantcohoe.com> - 2.7-09
