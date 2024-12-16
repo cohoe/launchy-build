@@ -7,7 +7,7 @@ build:
 	rpmbuild -bb SPECS/launchy.spec
 
 install:
-	dnf erase launchy -y
+	dnf remove launchy -y
 	dnf install ~/rpmbuild/RPMS/x86_64/launchy-2*.x86_64.rpm -y
 
 clean:
